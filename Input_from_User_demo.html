@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Input from User</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var str = document.getElementById("text1").value;
+            var p= document.getElementById("pass").value;
+            if(str == "A" && p == "123")   // Check whether entered username and password are matched or not.
+            {
+                alert("Login");
+            }
+            else
+            {
+                alert("Failed");
+            }
+            
+        }
+
+
+        </script>
+    </head>
+    <body>
+        Name:  <input id="text1" placeholder="Enter name">
+        <br><br>
+        Password:  <input id="pass" type="password" placeholder="Enter password">
+        <br>
+        <button onclick="fn1()" id="btn1">Click</button>
+    </body>
+</html>

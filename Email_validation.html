@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Email validations</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var email=document.getElementById("em").value;
+            var reg=/^([a-z0-9\,-]+)@([a-z0-9]+).([a-z{2,8}])(.[a-z]{2,8})?$/;      // This Regular expression can be use to validate email. There must be different ways to achieve this.
+
+            if(reg.test(email))
+            {
+                document.getElementById("lbl").innerHTML="Valid";
+                document.getElementById("lbl").style.visibility="visible";
+                document.getElementById("lbl").style.color="blue";
+            }
+            else
+            {
+                document.getElementById("lbl").innerHTML="Invalid";
+                document.getElementById("lbl").style.visibility="visible";
+                document.getElementById("lbl").style.color="red";
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <input type="email" id="em" placeholder="Enter Email"/><br><br>
+        <label id="lbl" style="visibility: hidden;"></label><br><br>
+        <button onclick="validate()" type="submit">Click</button>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+        <title>Operators</title>
+
+        <script type="text/javascript">
+
+        var a=2;   // right to left associativity
+        var b=3;
+        var c=4;
+        var result1=a+b+c;       //left to right associativity (first (a+b) will be calculated and 
+                                //then that value will get added to c) and then sum wil be assigned to result
+
+        var result2= "a" + a + b;    // as it works according to left to right associativity, 
+                                    //first it got string therefore it considered remaining variables as string only
+
+        var result3 = a + b + "India" + c + a;                            
+
+        document.write("<h1>Addition is:  "+result1+"</h1>");   // ans is 9
+
+        document.write("<h2><p>Addition is:  "+result2+"</p></h2>");   // ans is a23
+        
+        document.write("<h3><p>Addition is:  "+result3+"</p></h3>");      // ans is 5India42
+
+        </script>
+    </head>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Scope of Variables</title>
+        <script type="text/javascript">
+        var a=5;   //global variable
+        document.write("<h1>"+a+"</h1>");   //print 5
+
+        function num()
+        {
+            var b=9;   //local variable
+            document.write("<h1>"+b+"</h1>");    // print 9
+            document.write("<h1>"+a+"</h1>");    // print 5
+        }
+
+        num();     // this function will print value of variable b
+        document.write("<h1>"+b+"</h1>");  // Now this line will not print anything because  variavle "b" is not global 
+
+        </script>
+    </head>
+</html>

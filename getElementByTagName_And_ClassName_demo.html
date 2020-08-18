@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>getElementByTagName and ClassName</title>
+        <script type="text/javascript">
+
+        function ch()
+        {
+            //getElementByTagName
+            var para=document.getElementsByTagName("p");
+            
+            para[0].style.fontSize=20;
+            para[2].style.fontWeight="bold";
+            para[1].style.color="Red";
+            
+            for(var i=0;i<para.length;i++)
+            {
+                para[i].style.backgroundColor="yellow";
+
+            }
+
+            //getElementByClassName
+
+            var CN=document.getElementsByClassName("gp");
+            for(var j=0;j<CN.length;j++)
+            {
+                CN[j].style.fontSize=40;
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <p class="gp">Hello</p>
+        <p>GM</p>
+        <p class="gp">GN</p>
+        <p class="gp">SD</p>
+        <br>
+        <a class="gp" href="#">Google</a>
+        <a href="www.facebook.com">facebook</a>
+
+                <br>
+                <br>
+            <button onclick="ch()" id="btn">Click</button>
+
+    </body>
+</html>

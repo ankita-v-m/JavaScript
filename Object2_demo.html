@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Object2</title>
+        <script type="text/javascript">
+/*
+        // Booleans , Numbers , Strings can be an objects (if defined with the new keyword)
+        // Dated, Maths, Regular expressions are always an objects
+
+        var str = "India";
+        document.write("<h2>"+typeof(str)+"</h2>");
+
+        var str1 = new String();
+        document.write("<h2>"+typeof(str1)+"</h2>");
+
+        var num1 = new Number();
+        document.write("<h2>"+typeof(num1)+"</h2>");
+
+        var flag = new Boolean();
+        document.write("<h2>"+typeof(flag)+"</h2>");
+*/
+        var Car = {
+            car_brand : "Tesla",
+            car_model : "Model 1",
+            price : 35000,
+
+            teslaAutoPilot : function()
+            {
+                document.write("<h2>This car has Auto pilot</h2>");
+            }
+        }
+// Now we have one object for Car. But we forgot one property i.e. Car fuel type and there are 100 line of code then what will we do.
+// So in JS we can add property outside the object
+
+        Car.fuelType = "Electric";
+        document.write("<h2>"+Car.fuelType+"</h2>");
+
+        // If we want to delete any property. But if we comment that delete line, again we get that property and its value
+        //delete Car.price;
+       // document.write("<h2>"+Car.price+"</h2>");
+
+        // Change datatype of any property
+        Car.price ="TEN";   // convert Number datatype of price to string
+        document.write("<h2>"+typeof(Car.price)+"</h2>");
+        document.write("<h2>"+Car.price+"</h2>");
+        </script>
+    </head>
+</html>

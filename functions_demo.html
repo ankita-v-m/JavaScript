@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Functions</title>
+        <script type="text/javascript">
+/*
+Functions are one of the fundamental building blocks in Javascript.
+A function is a set of statements that performs a task or calculates a value.
+A Javascript function is a block of code designed to perform a particular task.
+A Javascript function is executed when "something invokes it"
+*/
+         function addNum()  //Function to add 2 numbers and print the result
+         {
+            var a =5 ;
+            var b =2;
+            var total = a+b;
+
+            document.write("<h1>"+total+"</h1>");
+            
+         }
+
+         function addNum1(a,b)    // Function with parameters
+         {
+             var tot=a+b;
+             document.write("<h2>"+tot+"</h2>");
+         }
+
+         function addName(a,b)
+         {
+             var name=a+b;
+             document.write("<h2>"+name+"</h2>");
+
+         }   
+
+         function subNum()
+         {
+            var a =5 ;
+            var b =2;
+            return a-b;
+         }
+
+         addNum();
+         addNum1(1,3);
+         addName("Ankita",3);   
+
+         var sub=subNum();
+         document.write("<h2>"+sub+"</h2>");
+        </script>
+    </head>
+</html>

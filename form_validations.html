@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Form validations</title>
+        <script type="text/javascript">
+
+        function validate()
+        {
+            var username =document.getElementById("uname");
+            var password =document.getElementById("pass");
+
+            /*
+            if(username.value.trim() =="" || password.value.trim()=="")       // trim() used to remove spaces and tabs
+            {
+                alert("No blank allowed");
+                return false;
+            }
+            else{
+                return true;
+            }
+            */
+           // Check password length is not less than 5
+
+           if(username.value.trim() == "")
+           {
+               alert("Blank username");
+               username.style.border="solid 3px red";
+               return false;
+           }
+           else if(password.value.trim() == "")
+           {
+               alert("Blank password");
+               password.style.border="solid 3px red";
+               return false;
+           }
+           else if(password.value.trim().length <5)
+           {
+               alert("Too short password");
+               password.style.border="solid 3px red";
+               return false;
+           }
+           else
+           {
+               return true;
+           }
+
+        }
+// in HTML5, there is property called "required" can be use in input tag to make the field compulsory but it accepts spaces.
+// means instead of using javascript, we can make any field compulsory using required keyword.
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate()" action="welcome_page.html">
+          Name:  <input id="uname" type="text" placeholder="Enter Username"/><br><br>
+          Password:   <input id="pass" type="password" placeholder="Enter Password"/><br><br>
+        <!--Age: <input type="text"required/><br>  -->  
+          <button type="submit">Login</button>
+        </form>
+    </body>
+</html>

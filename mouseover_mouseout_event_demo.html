@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>mouseover mouseout event</title>
+        <script type="text/javascript">
+
+        function setNewImage()
+        {
+            document.getElementById("img1").src="demo2.jpg";
+
+        }
+        function setOldImage()
+        {
+            document.getElementById("img1").src="demo.jpg";
+        }
+
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="demo.jpg" width="100"/>
+
+    </body>
+</html>

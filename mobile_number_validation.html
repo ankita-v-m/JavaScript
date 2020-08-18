@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Mobile number validations</title>
+        <script type="text/javascript">
+/*
+    \d  = [0-9]
+    \w  = (a-z,A-Z,0-9,_)
+    \s  = spaces and tabs
+    \t  = tab only
+*/
+
+
+        function validate()
+        {
+            var text = document.getElementById("mnum").value;
+            var reg =/^[7-9]\d{9}$/;      // Regular Expression
+
+            if(reg.test(text))
+            {
+                document.getElementById("lbltext").innerHTML="Valid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="green";
+            }
+            else
+            { 
+                document.getElementById("lbltext").innerHTML="Invalid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="red";
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <input id="mnum" type="text" placeholder="Enter Mobile Number"/><br><br>
+        <label id="lbltext" style="visibility: hidden;"></label>
+        <button onclick="validate()" type="submit">Submit</button>
+    </body>
+</html>

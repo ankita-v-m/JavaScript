@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Array</title>
+        <script type="text/javascript">
+
+//The Array object is used to store multiple values in a single variable:
+//Array indexes are zero-based: The first element in the array is 0, the second is 1, and so on.
+
+                  //  0      1      2 
+        var  cars = ["BMW","AUDI","TATA"];
+
+        cars.push("Benz");           // arrays are objects and its having various properties/ methods like "lastIndexOf","length","pop","push"
+    //  var cars = new Array("BMW","AUDI","TATA");  Other way to declare an array
+
+        document.write("<h1>"+cars+"</h1>");
+        document.write("<h1>"+cars[2]+"</h1>");    // print TATA
+
+        for(var i=0;i<4;i++)
+        {
+            document.write("<h1>"+cars[i]+"</h1>");
+        }
+
+        </script>
+    </head>
+</html>

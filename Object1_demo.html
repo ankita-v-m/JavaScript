@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Object1</title>
+        <script type="text/javascript">
+/* Javascript is Object Oriented Programming Language
+        
+       1. Normal way 
+
+        var car_brand = "Tesla";
+        var car_model = "Model 1";
+        var price = 35000;
+
+        function teslaAutoPilot()
+        {
+            document.write("<h2>This car has Auto pilot");
+        }
+
+        teslaAutoPilot();    
+------------------------------------------------------------------------------------------------
+        2. Object for one car values. Object is a comple type data type
+
+        var Car = {
+            car_brand : "Tesla",
+            car_model : "Model 1",
+            price : 35000,
+
+            teslaAutoPilot : function()
+            {
+                document.write("<h2>This car has Auto pilot</h2>");
+            }
+        }
+
+        document.write("<h2>"+Car.price+"</h2>");   // access variable using object name
+        Car.teslaAutoPilot();   // access function (which is inside object) using object name
+---------------------------------------------------------------------------------------------------------        
+*/
+  //      3. Object for more car values
+
+        function Cars(car_brand,car_model,price)
+        {
+            this.car_brand = car_brand;
+            this.car_model = car_model;
+            this.price = price;
+            this.teslaAutoPilot = function()
+            {
+                //document.write("<h2>This car has Auto pilot</h2>");
+                document.write("<h2>"+car_model+"</h2>");
+            }
+        }
+
+        var c1 = new Cars("Tesla","Model 1",35000);
+        c1.teslaAutoPilot();
+        document.write("<h2>"+c1.car_brand+"</h2>");
+
+        var c2 = new Cars("BMW","Model5",40000);
+        c2.teslaAutoPilot();
+        document.write("<h2>"+c2.car_brand+"</h2>");
+
+
+        </script>
+    </head>
+</html>

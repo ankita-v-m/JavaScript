@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <script type="text/javascript">
+
+        function buttonClick()
+        {
+            document.getElementById("heading2").innerHTML="India";
+            alert("Button clicked");
+        }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()">Click Me</button>   <!-- Here page will have a button and a text. 
+                                                            When button will be clicked "buttonClick()" function will be called.
+                                                            First pop up msg will come saying "Button clicked" and text will changed to "India"-->
+        <h2 id="heading2">Text</h2>
+    </body>
+</html>

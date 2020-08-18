@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Radio buttons</title>
+        <script type="text/javascript">
+            function fn()
+            {
+                var rd1= document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+                var rd3=document.getElementById("rd3");
+
+                if(rd1.checked==true)
+                    alert("Selected is "+rd1.value);
+                else if(rd2.checked==true)
+                    alert("Selected is "+rd2.value);
+                else if(rd3.checked==true)
+                    alert("Selected is "+rd3.value);        
+                else
+                    alert("Nothing");
+            }
+    
+        </script>
+    </head>
+    <body>
+        <input id="rd1" name="grp1" type="radio" value="AA">AA</input><br>
+        <input id="rd2" name="grp1" type="radio" value="BB">BB</input><br>
+        <input id="rd3" name="grp1" type="radio" value="CC">CC</input><br>
+        <button onclick="fn()" id="btn">Submit</button>
+
+    </body>
+
+</html>

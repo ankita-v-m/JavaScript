@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var username = document.getElementById("uname").value;
+            //var reg= /E00/i;    // "i" is for case insensitive
+            // var reg = new RegExp("E00","i"); one more way to define regular expression
+            var reg = /[a-xA-X]00/;
+           // var reg=/[^1]887/;
+            if(reg.test(username))
+            {
+                alert("Valid");
+                document.getElementById("lbluser").style.visibility="hidden";
+
+            }
+            else{
+                alert("Invalid");
+                document.getElementById("lbluser").style.visibility="visible";
+            }
+        }
+
+
+        </script>
+    </head>
+    <body>
+        <input id="uname" type="text" placeholder="Username"/><br>
+        <label id="lbluser" style="color: red; visibility: hidden;">Invalid Username</label><br>
+        <button onclick="validate()" id="btn" type="submit">Click</button>
+    </body>
+</html>
