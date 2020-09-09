@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<p>Subtract the numbers in the array, starting from the left:</p>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [175, 50, 25,10];
+
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);   
+
+ //The reduce() method reduces the array to a single value.
+//The reduce() method executes a provided function for each value of the array (from left-to-right).
+//The return value of the function is stored in an accumulator (result/total).
+
+function myFunc(total, num) {
+  return total + num;
+}
+</script>
+
+</body>
+</html>

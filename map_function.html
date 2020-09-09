@@ -1,0 +1,40 @@
+<html>
+<body>
+<div>
+    <p>Click the button to get the square root of each element in the array.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+</div>
+
+<div>
+    <p>Multiply every element in the array with 10:</p>
+
+    <p id="demo2"></p>
+</div>
+
+<script type="text/javascript">
+
+var numbers = [4, 10, 16, 25,36,49];
+function myFunction() {
+  x = document.getElementById("demo")
+  x.innerHTML = numbers.map(Math.sqrt); 
+}
+
+var numbers1 = [65, 44, 12, 4];
+var newarray = numbers1.map(myFunction2)
+
+function myFunction2(num) {
+  return num * 10;
+}
+
+document.getElementById("demo2").innerHTML = newarray;
+
+
+
+</script>
+
+</body>
+</html>

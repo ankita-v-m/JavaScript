@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<p>Click the button to get every element in the array that has a value of 18 or more.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+var ages = [10,20,30,40,50,60,70,80,90,100];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+}</script>
+
+</body>
+</html>
